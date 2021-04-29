@@ -11,7 +11,7 @@ class App extends Component {
                 super();
 
                 this.state = {
-                        letters: Letters,
+                        letters: [],
                         clickedLetter: {},
                         searchText: ''
                 };
@@ -23,7 +23,7 @@ class App extends Component {
 
                 const searchText = this.state.searchText;
                 const filteredLetters = Letters.filter(
-                        letter => (letter.to.toLowerCase().startsWith(searchText.toLowerCase()))
+                        letter => (letter.to.toLowerCase().startsWith(searchText.toLowerCase()) && this.state.searchText.length > 0)
                 );
 
                 return (
