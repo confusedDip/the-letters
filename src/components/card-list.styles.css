@@ -1,0 +1,24 @@
+.card{
+        transition: transform 0.3s ease-in-out;
+        animation: fadeInAnimation ease-in-out 1s;
+        background-color: rgba(255,255,255,0.6);
+}
+
+.card:hover{
+        transform: translateY(-10px);
+        background-color: rgba(255,255,255,0.8);
+}
+
+@keyframes fadeInAnimation{
+        0%{
+                opacity: 0;
+        }
+        100%{
+                opacity: 100%;
+        }
+}
+
+.modal {
+        background-color: #2a2a72;
+        background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+}
